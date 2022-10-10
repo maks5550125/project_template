@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../css/index_style.css">
+        <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <!-- @import "components/header/header.kit" -->
+
+        <!-- @import "components/footer/footer.kit" -->
+        <script src="js/index.js"></script>
+        <script>
+            $headerCataloglist[0].classList.add('_active');
+
+            for (let i = 0; i < $headerCataloglist.length; i++) {
+                activationDropDownList($headerCataloglist[i], $headerCatalogDropDownLists[i], $headerCataloglist[0]);
+            }
+        </script>
+    </body>
+</html>
